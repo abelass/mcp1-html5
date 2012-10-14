@@ -1,3 +1,8 @@
+#SET{id_home,#CONFIG{mcp1/rubrique_accueil}|picker_selected{rubrique}}
+[(#GET{id_home}|is_array|oui)#SET{id_home,#CONFIG{mcp1/rubrique_accueil}|picker_selected{rubrique}|valeur_tableau{0}}]
 
-<INCLURE{fond=rubrique}{env}{id_rubrique=(#CONFIG{mcp1/rubrique_accueil}|picker_selected{rubrique})}/>
+
+<BOUCLE_principale_rubrique(RUBRIQUES){id_rubrique=#GET{id_home}}{tout}>
+    <INCLURE{fond=structure,env,id_rubrique,id_secteur=#ID_SECTEUR,type-page=rubrique,composition=#COMPOSITION} />
+</BOUCLE_principale_rubrique>
 
