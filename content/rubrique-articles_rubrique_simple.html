@@ -1,0 +1,22 @@
+<BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}{tout}>
+[(#REM) Fil d'Ariane ]
+
+<INCLURE{fond=inclure/file_ariane,id_rubrique,titre=#TITRE,id_trad,id_parent,imprimer}/>
+
+<div class="contenu-principal">
+
+	<div class="cartouche">
+		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
+		<h1 class="h1 #EDIT{titre}">#TITRE</h1>
+	</div>
+	
+	[(#REM) Boite à outils]
+	[(#INCLURE{fond=inclure/outils,env,classe=absolute})]
+	
+	[<div class="#EDIT{texte} chapo">(#TEXTE)</div>]
+</div>
+
+[(#REM) Articles de la rubrique ]
+
+<INCLURE{fond=inclure/articles_rubrique_simple,id_rubrique,env,ajax,iid_trad,id_parent}/>
+</BOUCLE_contenu_rubrique>
