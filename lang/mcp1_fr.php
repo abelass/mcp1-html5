@@ -23,6 +23,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	
 	// D
 	'donnees_auteurs' => 'Le nom de l\'auteur',
+	'donnees_date' => 'La date de publication',	
 	
 	// I
 	'icone_outils_collaboratifs' => 'Outils collaboratifs',
