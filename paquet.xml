@@ -25,6 +25,7 @@
 	<necessite nom="article_pdf" compatibilite="[0.4.5;[" />
 	<necessite nom="recommander" compatibilite="[1.0.0;[" />
 
+	<utilise nom="multilingue" compatibilite="[0.2.1;[" />
 	
 	<pipeline nom="autoriser" inclure="mcp1_autorisations.php" /> 
 	<pipeline nom="insert_head" inclure="mcp1_pipelines.php" /> 
