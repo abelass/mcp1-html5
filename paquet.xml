@@ -1,7 +1,7 @@
 <paquet
 	prefix="mcp1"
 	categorie="outil"
-	version="0.2.0"
+	version="0.2.1"
 	etat="dev"
 	compatibilite="[3.0.1;3.0.*]"
 	logo="prive/themes/spip/images/mcp1-64.png"
@@ -25,6 +25,7 @@
 	<necessite nom="article_pdf" compatibilite="[0.4.5;[" />
 	<necessite nom="recommander" compatibilite="[1.0.0;[" />
 
+	<utilise nom="multilingue" compatibilite="[0.2.1;[" />
 	
 	<pipeline nom="autoriser" inclure="mcp1_autorisations.php" /> 
 	<pipeline nom="insert_head" inclure="mcp1_pipelines.php" /> 
