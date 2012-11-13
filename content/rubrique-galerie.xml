@@ -1,5 +1,5 @@
 <composition>
-        <nom>Galeries des articles</nom>
+        <nom>Galeries articles du site</nom>
 
-        <description>Affiche une galerie des articles</description>
+        <description>Affiche une galerie des des images articles du site</description>
 </composition>
