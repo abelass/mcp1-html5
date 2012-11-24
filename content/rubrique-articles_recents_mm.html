@@ -1,0 +1,24 @@
+<BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}{tout}>
+
+[(#REM) Fil d'Ariane ]
+
+<INCLURE{fond=inclure/file_ariane,id_rubrique,titre=#TITRE,id_parent,imprimer}/>
+
+<div class="contenu-principal">
+
+	<div class="cartouche">
+		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
+
+        [(#VAL{donnees_date}|a_cacher|non)
+          [<p class="info-publi"><span class="published"><:dernier_ajout:> : (#DATE|affdate_jourcourt).</span></p>]
+          ]
+	</div>
+	
+	[(#REM) Boite à outils]
+		[(#INCLURE{fond=inclure/outils,env,classe=absolute})]
+	[<div class="#EDIT{texte} chapo">(#TEXTE)</div>]
+</div>
+
+<INCLURE{fond=inclure/articles_recents_mm,id_rubrique='',env,ajax,id_parent,rubriques_exclus=(#CONFIG{mcp1/cacher_rubrique_articles_recents}|picker_selected{rubrique})}/>
+
+</BOUCLE_contenu_rubrique>
