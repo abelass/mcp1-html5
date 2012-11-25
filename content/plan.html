@@ -6,7 +6,7 @@
 		<h1 class="h1"><:plan_site:></h1>
 	</header>
 
-<BOUCLE_secteurs(RUBRIQUES) {racine} {par titre}>
+<BOUCLE_secteurs(RUBRIQUES) {racine} {par titre}{tout}>
 
 	<h2 class="h2"><a href="#URL_RUBRIQUE">#TITRE</a></h2>
 
@@ -22,7 +22,7 @@
 
 	<B_rubriques>
 	<ul class="plan">
-		<BOUCLE_rubriques(RUBRIQUES) {id_parent} {par titre}>
+		<BOUCLE_rubriques(RUBRIQUES) {id_parent} {par titre}{tout}>
 		<li>
 			<strong><a href="#URL_RUBRIQUE">#TITRE</a></strong>
 			
