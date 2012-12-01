@@ -4,7 +4,7 @@
 	[(#ID_RUBRIQUE|?{<h2 class="h2 invisible"><:articles_rubrique:></h2>,<h2 class="h2 articles_recents"><:derniers_articles:></h2>})]
 	<ul class="liste-items">
 		<BOUCLE_articles(ARTICLES) {id_rubrique ?} {id_rubrique !IN  (#CONFIG{mcp1/cacher_rubrique_articles_recents}|picker_selected{rubrique})} {!par date}{lang} {pagination 5}>
-		[(#COMPTEUR_BOUCLE|=={1}|oui)
+		[(#TOTAL_BOUCLE|=={1}|oui)
 			
 				<div class="cartouche">
 					[(#LOGO_ARTICLE||image_reduire{200,200})]
@@ -39,7 +39,7 @@
 			[(#INCLURE{fond=inclure/documents}{id_article})]
 			
 			]		
-		[(#COMPTEUR_BOUCLE|>{1}|oui)
+		[(#TOTAL_BOUCLE|>{1}|oui)
 		#INCLURE{fond=inclure/article-resume,id_article}	
 			]	
 		
