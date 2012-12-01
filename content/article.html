@@ -14,7 +14,9 @@
 		    [(#VAL{donnees_auteurs}|a_cacher|non)[<span class="sep">, </span><span class="auteurs"><:par_auteur:> (#LESAUTEURS)</span>]]
 		</p>
 	</header>
-
+    [(#REM) Boite à outils]
+    
+    [(#INCLURE{fond=inclure/outils,env,titre,introduction=#INTRODUCTION,url=#URL_ARTICLE})]
 	[<section class="#EDIT{chapo} chapo surlignable">(#CHAPO|image_reduire{500,0})</section>]
 	[<section class="#EDIT{texte} texte surlignable">(#TEXTE|image_reduire{500,0})</section>]
 	[<section class="#EDIT{hyperlien} hyperlien"><:voir_en_ligne:> : <a href="(#URL_SITE)" class="spip_out">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></section>]
