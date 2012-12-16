@@ -99,3 +99,18 @@ div.socialtags {
 #recommander #cboxTitle{display:none;}
 
 
+/* 
+ * Menu déroulant
+*/
+
+.menuder li, .menuder a { width: auto;}
+.menuder ul { background-color: transparent;}
+.menuder li:hover,
+.menuder li.hover { background-color: transparent; }
+
+.menuder a.daddy { background: none; }
+
+
+.menuder li ul { border-width: 0; }
+
+.menuder li ul ul { margin: -1.75em 0 0 6em; }
