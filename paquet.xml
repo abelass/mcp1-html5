@@ -21,7 +21,7 @@
 	<necessite nom="corbeille" compatibilite="[3.0.1;[" />
 	<necessite nom="nospam" compatibilite="[0.8.12;[" />
 	<necessite nom="socialtags" compatibilite="[0.9.16;[" />
-	<necessite nom="memoization" compatibilite="[1.2.0;[" />
+	<necessite nom="cache_cool" compatibilite="[0.3.1;[" />
 	<necessite nom="article_pdf" compatibilite="[0.4.5;[" />
 	<necessite nom="recommander" compatibilite="[1.0.0;[" />
 
