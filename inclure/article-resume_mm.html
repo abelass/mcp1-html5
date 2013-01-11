@@ -6,7 +6,7 @@
 
 <BOUCLE_articles(ARTICLES) {id_article} {statut?}>
 <li class="item hentry">
-	
+	<article>
 	    <a href="#URL_ARTICLE" rel="bookmark">
 	        <h3 class="h3 entry-title">#TITRE</h3>
 	        [(#ENV**{logo_article})]
@@ -27,5 +27,6 @@
 		]
 	<//B_nb_commentaires>
 	</div>
+	</article>
 </li>
 </BOUCLE_articles>

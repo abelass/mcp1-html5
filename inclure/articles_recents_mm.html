@@ -6,7 +6,7 @@
 #SET{non_docs,#GET{videos}|array_merge{#GET{images}}|array_merge{#GET{audio}}}
 
 <B_articles>
-<div class="liste articles sommaire">
+<section class="liste articles sommaire">
 	#ANCRE_PAGINATION
 	[(#ID_RUBRIQUE|?{<h2 class="h2 invisible"><:articles_rubrique:></h2>,<h2 class="h2 articles_recents"><:derniers_articles:></h2>})]
 	<ul class="liste-items">
@@ -22,5 +22,5 @@
 		</BOUCLE_articles>
 	</ul>
 	[<p class="pagination">(#PAGINATION)</p>]
-</div>
+</section>
 </B_articles>

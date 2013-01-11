@@ -3,7 +3,7 @@
 
 <INCLURE{fond=inclure/file_ariane,id_rubrique,titre=#TITRE,id_trad,id_parent,imprimer,imprimer}/>
 
-<div class="contenu-principal">
+<article class="contenu-principal">
 
 	<div class="cartouche">
 		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
@@ -17,13 +17,13 @@
 	[(#INCLURE{fond=inclure/outils,env})]
 	
 	[<div class="#EDIT{texte} chapo">(#TEXTE)</div>]
-</div>
+</article>
 
 
 [(#REM) Portfolio : album d'images ]
 
 <B_articles>
-    <div class="bloc clearfix" id="documents_album">
+    <aside class="bloc clearfix" id="documents_album">
     <ul>
     <BOUCLE_articles(ARTICLES){id_rubrique}{pagination 9}>#SET{titre,#TITRE}
     <B_documents_portfolio2>
@@ -46,7 +46,7 @@
 </div><!--#documents_album-->
 </B_articles>
 
-</div><!--#documents_album-->
+</aside><!--#documents_album-->
 </B_articles>
 <br class="nettoyeur"/>
 </BOUCLE_contenu_rubrique>

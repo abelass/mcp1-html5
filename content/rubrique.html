@@ -4,24 +4,24 @@
 [(#ID_RUBRIQUE|=={1}|oui)#SET{home,oui}]
 <INCLURE{fond=inclure/file_ariane,id_rubrique,titre=#TITRE,id_parent}/>
 
-<div class="contenu-principal">
+<article class="contenu-principal">
 
-	<div class="cartouche">
+	<header class="cartouche">
 		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
 		<h1 class="h1 #EDIT{titre}">#TITRE</h1>
 		[(#VAL{donnees_date}|a_cacher|non)
 		  [<p class="info-publi"><span class="published"><:dernier_ajout:> : (#DATE|affdate_jourcourt).</span></p>]
 		  ]
-	</div>
+	</header>
 	
 	[(#REM) Boite à outils]
 	[(#INCLURE{fond=inclure/outils,env})]
 	
 	[<div class="#EDIT{texte} chapo">(#TEXTE)</div>]
-</div>
+</articles>
 
 <B_articles>
-<div class="liste articles">
+<nav class="liste articles">
 	#ANCRE_PAGINATION
 	<h2 class="h2"><:articles_rubrique:></h2>
 	<ul class="liste-items">
@@ -30,12 +30,12 @@
 		</BOUCLE_articles>
 	</ul>
 	[<p class="pagination">(#PAGINATION)</p>]
-</div>
+</nav>
 </B_articles>
 
 	[(#REM) Si aucun article, affiche un plan de la rubrique ]
 	<B_sous_rubriques>
-	<div class="menu rubriques">
+	<nav class="menu rubriques">
 		<h2 class="h2"><:sous_rubriques:></h2>
 		<ul class="menu-liste">
 			<BOUCLE_sous_rubriques(RUBRIQUES) {id_parent} {par num titre, titre}>
@@ -57,7 +57,7 @@
 			</li>
 			</BOUCLE_sous_rubriques>
 		</ul>
-		</div>
+		</nav>
 	</B_sous_rubriques>
 <//B_articles>
 
@@ -66,7 +66,7 @@
 
 [(#REM) Breves du secteur ]
 <B_breves>
-<div class="liste breves">
+<aside class="liste breves">
 		#ANCRE_PAGINATION
 		<h2 class="h2"><:breves:></h2>
 		<ul class="liste-items">
@@ -75,12 +75,12 @@
 				</BOUCLE_breves>
 		</ul>
 		[<p class="pagination">(#PAGINATION)</p>]
-</div>
+</aside>
 </B_breves>
 
 [(#REM) Sites de la rubrique ]
 <B_sites>
-<div class="liste sites">
+<aside class="liste sites">
 		<h2 class="h2"><:sur_web:></h2>
 		<ul class="liste-items">
 				<BOUCLE_sites(SITES) {id_rubrique} {par nom_site}>
@@ -96,7 +96,7 @@
 				</li>
 				</BOUCLE_sites>
 		</ul>
-</div>
+</aside>
 </B_sites>
 
 [(#REM) Proposer un site ]
