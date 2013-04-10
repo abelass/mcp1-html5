@@ -3,7 +3,7 @@
     <div class="menu-conteneur">
     <ul class="menuder menu-liste menu-items">
             <BOUCLE_rubriques(RUBRIQUES){id_parent} {par num titre, titre}{tout}>
-            <li class="item menu-entree[ (#EXPOSE)]">
+            <li class="item menu-entree[ (#EXPOSE)][(#COMPTEUR_BOUCLE|=={1}|oui) first][(#COMPTEUR_BOUCLE|=={#TOTAL_BOUCLE}|oui) last]">
                 <a href="#URL_RUBRIQUE" class="intitule">[(#TITRE|supprimer_numero|couper{80})]</a>
 
                 <B_sous_rubriques>
