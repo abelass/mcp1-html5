@@ -30,7 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_outils_rapides' => 'Outils rapides',	
 	
 	// M
-	'mcp1_titre' => 'My Chacra - Pack basique',
+	'mcp1_titre' => 'Web Simple - Pack Start',
 	'menu_barre_nav' => 'Choix du menu de la barre de navigation',
 
 

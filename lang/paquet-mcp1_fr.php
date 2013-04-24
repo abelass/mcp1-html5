@@ -6,9 +6,9 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// M
-	'mcp1_description' => 'Pack basique html5',
-	'mcp1_nom' => 'My Chacra - Pack basique html5',
-	'mcp1_slogan' => 'Un premier site en html5',
+	'mcp1_description' => 'Pack Start html5',
+	'mcp1_nom' => 'Web Simple - Pack start html5',
+	'mcp1_slogan' => 'Web Simple site en html5',
 );
 
 ?>
