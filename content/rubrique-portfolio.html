@@ -3,7 +3,7 @@
 
 <INCLURE{fond=inclure/file_ariane,id_rubrique,titre=#TITRE,id_trad,id_parent,imprimer}/>
 
-<div class="contenu-principal">
+<article class="contenu-principal">
 
 	<div class="cartouche">
 		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
@@ -14,7 +14,7 @@
 	[(#INCLURE{fond=inclure/outils,env})]
 	
 	[<div class="#EDIT{texte} chapo">(#TEXTE)</div>]
-</div>
+</article>
 
 
 [(#REM) Portfolio : album d'images ]
