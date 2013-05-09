@@ -16,7 +16,7 @@
 	<necessite nom="edition_directe" compatibilite="[3.0.1;]" />
 	<necessite nom="crayons" compatibilite="[1.13.8;]" />	
 	<necessite nom="zengarden" compatibilite="[2.4.2;]" />
-	<necessite nom="Z5" compatibilite="[2.0.0;[" />
+	<necessite nom="Z5" compatibilite="[2.0.1;[" />
 	<necessite nom="saisies" compatibilite="[1.25.9;[" />
 	<necessite nom="corbeille" compatibilite="[3.0.1;[" />
 	<necessite nom="nospam" compatibilite="[0.8.12;[" />
